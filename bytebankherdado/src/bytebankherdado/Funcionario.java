@@ -1,14 +1,15 @@
 package bytebankherdado;
 
-public class Funcionario {
+//a classe funcionario só trará os parametros
+//mas não podemos criar um funcionario que seja so funcionario
+//todos tem uma funcao por isso a classe é abstrata
+public abstract class Funcionario {
 	private String nome;
 	private String cpf;
 	private double salario;
 	
-
-	public double getBonificacao() {
-		return this.salario * 0.05;
-	}
+	//metodo abstrato não tem implementação, seus filhos que fazem
+	public abstract double getBonificacao();
 	
 	public String getNome() {
 		return nome;
